@@ -24,23 +24,16 @@ public class Application
     {
         System.out.println("\n"+"using Application context"+"\n");
         ApplicationContext applicationContext= new AnnotationConfigApplicationContext(ConfigClass.class);
+        System.out.println("\n Demo of auto wire 'By Name' \n");
         Movie movie= (Movie) applicationContext.getBean("movie1");
         System.out.println("\n"+movie.getActor().toString()+"\n");
-        Movie movie1=applicationContext.getBean("movie2",Movie.class);
-        System.out.println("Checking if both are the same objects with scope:singleton");
-        System.out.println(movie1==movie);
-        Movie movie2= (Movie) applicationContext.getBean("movie3");
-        System.out.println("\n"+movie.getActor().toString()+"\n");
-        Movie movie3= (Movie) applicationContext.getBean("movie4");
-        System.out.println("\n"+movie1.getActor().toString()+"\n");
-        System.out.println("Checking if both are the same objects with scope:prototype");
-        System.out.println(movie2==movie3);
-        System.out.println("\n Demonstration of multiple ids 'movieA' and 'movieB' in the same movie bean \n");
-        Movie movie4= (Movie) applicationContext.getBean("movieA");
-        System.out.println("\n"+movie4.getActor().toString()+"\n");
-        Movie movie5= (Movie) applicationContext.getBean("movieB");
-        System.out.println("\n"+movie5.getActor().toString()+"\n");
-
+       /* "this part throws an ecxeption becaue two beans of same type is there "*/
+//        Movie movie1= (Movie) applicationContext.getBean("movie");
+//        System.out.println("\n Demo of get type ecxeption \n");
+//        System.out.println("\n"+movie1.getActor().toString()+"\n");
+        System.out.println("\n Demo of constructor auto wiring \n");
+        Movie movie2= (Movie) applicationContext.getBean("movie5");
+        System.out.println("\n"+movie2.getActor().toString()+"\n");
     }
 
 }
