@@ -1,7 +1,9 @@
 package com.stackroute.domain;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @PropertySource("classpath:values-config.properties")
@@ -18,6 +20,7 @@ public class ConfigClass
             }
 
         @Bean(name = {"movie1","movie2"})
+        @Lazy
         public Movie movieObject()
             {
                 return new Movie(actorObject());
@@ -33,6 +36,11 @@ public class ConfigClass
         public Movie movieObject2()
         {
             return new Movie();
+        }
+        @Bean(name = "bean")
+        public BeanLifeCycleDemo beanLifeCycleDemoObject()
+        {
+            return new BeanLifeCycleDemo();
         }
 
 
