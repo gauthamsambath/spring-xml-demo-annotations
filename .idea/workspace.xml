@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d53c96cd-83b6-4a3b-b2d4-9beda5b04ef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/domain/BeanLifeCycleDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/domain/BeanPostProcessorDemoBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/domain/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/domain/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/domain/ConfigClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/domain/ConfigClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/domain/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/domain/Application.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="aware-interface-branch-annotations" />
+        <entry key="$PROJECT_DIR$" value="bean-lifecycle-branch-annotations" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -144,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570183801215</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bean-life-cycle-branch-annotations">
+      <created>1570187102502</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570187102502</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +168,7 @@
     <MESSAGE value="constructor-injection-branch-annotations" />
     <MESSAGE value="autowire-xml-branch-annotations" />
     <MESSAGE value="aware-interface-branch=annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="aware-interface-branch=annotation" />
+    <MESSAGE value="bean-life-cycle-branch-annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="bean-life-cycle-branch-annotations" />
   </component>
 </project>

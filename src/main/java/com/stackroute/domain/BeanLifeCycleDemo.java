@@ -12,22 +12,22 @@ public class BeanLifeCycleDemo implements InitializingBean, DisposableBean
         @Override
         public void destroy() throws Exception
             {
-                System.out.println("Destroying the bean");
+                System.out.println("\n Destroying the bean \n");
             }
 
         @Override
         public void afterPropertiesSet() throws Exception
             {
-                System.out.println("Properties are set");
+                System.out.println("\n Properties are set \n");
             }
         @PostConstruct
         public void customInit()
             {
-                System.out.println("Before initializing object");
+                System.out.println("\n Before initializing object \n");
             }
         @PreDestroy
         public void customDestroy()
             {
-                System.out.println("After Destruction of bean");
+                System.out.println("\n After Destruction of bean \n");
             }
     }

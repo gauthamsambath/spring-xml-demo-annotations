@@ -42,6 +42,11 @@ public class ConfigClass
         {
             return new BeanLifeCycleDemo();
         }
+        @Bean(name = "beanpost")
+        public BeanPostProcessorDemoBean beanPostProcessorDemoBeanObject()
+        {
+            return new BeanPostProcessorDemoBean();
+        }
 
 
     }

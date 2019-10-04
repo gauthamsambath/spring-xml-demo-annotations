@@ -20,6 +20,7 @@ public class Application
         System.out.println("\n Demo of initialize,disposable,custom init,custom destroy \n");
         ((AbstractApplicationContext)applicationContext).registerShutdownHook();
         BeanLifeCycleDemo beanLifeCycleDemo= (BeanLifeCycleDemo) applicationContext.getBean("bean");
+        BeanPostProcessorDemoBean beanPostProcessorDemoBean= (BeanPostProcessorDemoBean) applicationContext.getBean("beanpost");
     }
 
 }
