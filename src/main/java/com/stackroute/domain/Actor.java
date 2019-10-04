@@ -1,5 +1,6 @@
 package com.stackroute.domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Actor
@@ -8,29 +9,31 @@ public class Actor
         private String gender;
         private int age;
 
+
         public String getName() {
             return name;
         }
-        @Value("${actor_name}")
-        public void setName(String name) {
-            this.name = name;
-        }
+
 
         public String getGender() {
             return gender;
         }
-        @Value("${actor_gender}")
-        public void setGender(String gender) {
-            this.gender = gender;
-        }
+
 
         public int getAge() {
             return age;
         }
-        @Value("${actor_age}")
-        public void setAge(int age) {
+
+
+
+        @Autowired
+        public Actor(String name,String gender,int age) {
+            this.name = name;
+            this.gender = gender;
             this.age = age;
+            System.out.println("Using constructor injection");
         }
+
 
         @Override
         public String toString() {
