@@ -1,5 +1,7 @@
 package com.stackroute.domain;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class Actor
     {
         private String name;
@@ -9,7 +11,7 @@ public class Actor
         public String getName() {
             return name;
         }
-
+        @Value("${actor_name}")
         public void setName(String name) {
             this.name = name;
         }
@@ -17,7 +19,7 @@ public class Actor
         public String getGender() {
             return gender;
         }
-
+        @Value("${actor_gender}")
         public void setGender(String gender) {
             this.gender = gender;
         }
@@ -25,7 +27,7 @@ public class Actor
         public int getAge() {
             return age;
         }
-
+        @Value("${actor_age}")
         public void setAge(int age) {
             this.age = age;
         }
